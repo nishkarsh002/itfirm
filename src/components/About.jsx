@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="py-24  bg-white">
+    <div className="pt-24  bg-white">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left: Image */}
         <div className="relative ">
