@@ -24,45 +24,45 @@
  export const services = [
   {
     title: "Business Analytics",
-    icon: "/assets/icon/card1.png",
+    icon: "../assets/Icon/card1.png",
   },
   {
     title: "Web Development",
-    icon: "/assets/icon/card2.png",
+    icon: "/assets/Icon/card2.png",
   },
   {
     title: "Big Data Analytics",
-    icon: "/assets/icon/card3.png",
+    icon: "/assets/Icon/card3.png",
   },
   {
     title: "Cyber Security",
-    icon: "/assets/icon/card4.png",
+    icon: "/assets/Icon/card4.png",
   },
   {
     title: "Mobile App",
-    icon: "/assets/icon/card5.png",
+    icon: "/assets/Icon/card5.png",
   },
 ];
 
 export const servicesOffer = [
   {
     title: "iOS & Android App Development",
-    img: "assets/icon/1.png",
+    img: "assets/Icon/1.png",
     desc: "Build scalable and high-performance mobile apps tailored for both iOS and Android platforms.",
   },
   {
     title: "Progressive Web App (PWA)",
-    img: "assets/icon/2.png",
+    img: "assets/Icon/2.png",
     desc: "Deliver app-like experiences through web using fast, responsive, and installable PWAs.",
   },
   {
     title: "Custom Website Development",
-    img: "assets/icon/3.png",
+    img: "assets/Icon/3.png",
     desc: "We create dynamic, SEO-friendly websites built with modern frameworks like React, Next.js, and Laravel.",
   },
   {
     title: "UI/UX Design Strategy",
-    img: "assets/icon/1.png",
+    img: "assets/Icon/1.png",
     desc: "Design pixel-perfect, intuitive user interfaces and optimized user journeys to boost engagement.",
   },
   {
