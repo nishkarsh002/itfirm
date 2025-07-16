@@ -90,7 +90,7 @@ const Footer = () => {
               {[4, 5, 6, 8].map((img, idx) => (
                 <img
                   key={idx}
-                  src={`assets/icon/${img}.jpg`}
+                  src={`assets/Icon/${img}.jpg`}
                   alt={`gallery-${img}`}
                   className="w-full h-16 object-cover rounded hover:opacity-90 transition"
                 />
