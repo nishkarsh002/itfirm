@@ -58,7 +58,7 @@ const Navbar = () => {
 
         {/* Mobile Nav */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white px-4 pb-4">
+          <div className="lg:hidden bg-white px-4">
             <ul className="flex flex-col gap-2">
               {navItems.map((item, i) => (
                 <li key={i}>
