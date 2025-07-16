@@ -24,23 +24,23 @@
  export const services = [
   {
     title: "Business Analytics",
-    icon: "../assets/icon/card1.png",
+    icon: "/assets/icon/card1.png",
   },
   {
     title: "Web Development",
-    icon: "../assets/icon/card2.png",
+    icon: "/assets/icon/card2.png",
   },
   {
     title: "Big Data Analytics",
-    icon: "../assets/icon/card3.png",
+    icon: "/assets/icon/card3.png",
   },
   {
     title: "Cyber Security",
-    icon: "../assets/icon/card4.png",
+    icon: "/assets/icon/card4.png",
   },
   {
     title: "Mobile App",
-    icon: "../assets/icon/card5.png",
+    icon: "/assets/icon/card5.png",
   },
 ];
 
@@ -84,18 +84,18 @@ export const servicesOffer = [
           name: "Arnold Burner",
           title: "Senior Developer",
           feedback: "The client appreciates their flexibility in terms. They helped develop an app with commendable UI/UX.",
-          image: "../assets/client/user1.jpg", 
+          image: "/assets/client/user1.jpg", 
       },
       {
           name: "Sophie Turner",
           title: "Project Manager",
           feedback: "Reliable and responsive! Their support team helped us integrate solutions quickly and effectively.",
-          image: "../assets/client/user2.jpg",
+          image: "/assets/client/user2.jpg",
       },
       {
           name: "Michael Chen",
           title: "CTO, TechnoSoft",
           feedback: "Great partnership. We scaled faster thanks to their professional delivery and agile process.",
-          image: "../assets/client/user3.jpg",
+          image: "/assets/client/user3.jpg",
       },
   ];
