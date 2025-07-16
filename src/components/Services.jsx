@@ -5,7 +5,7 @@ import { servicesOffer } from "../data/navData";
 const Service = () => {
     return (
         <div
-            className="relative py-24 bg-white"
+            className="relative pt-24 bg-white"
             style={{
                 backgroundImage:
                     "url('assets/img/bg_services.png')",
