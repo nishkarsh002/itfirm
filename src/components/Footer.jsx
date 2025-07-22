@@ -36,14 +36,17 @@ const Footer = () => {
           {/* Column 1: About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="https://html.themexriver.com/it-firm/images/logo-3.png" alt="logo" className="h-12" />
+              <img src="../assets/img/logo.png" alt="logo" className="h-12" />
             </div>
             <p className="text-sm mb-4">
               We work with a passion of taking challenges and creating new ones in the advertising sector.
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded">
+            <Link to="/about">
+             <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded">
               About us
             </button>
+            </Link>
+           
           </div>
 
           {/* Column 2: Only Social Icons */}

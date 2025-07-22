@@ -1,6 +1,6 @@
 import  { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import {navItems }from "../data/navData";
 
 const Navbar = () => {

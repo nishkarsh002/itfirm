@@ -38,13 +38,9 @@ const Banner = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="relative bg-white text-center group overflow-hidden border rounded-md"
+                className="relative bg-white text-center group overflow-hidden  rounded-md"
               >
-                <Link
-                  to="/service-detail"
-                  className="absolute inset-0 z-20"
-                  aria-label={service.title}
-                />
+                
                 <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-90 transition-opacity duration-300 z-10" />
                 <div className="relative z-20 p-6 flex flex-col items-center">
                   <img

@@ -1,6 +1,7 @@
  export const navItems = [
     {
       label: "Home",
+      link: "/",
       
     },
     {
@@ -9,15 +10,17 @@
     },
     {
       label: "Services",
+      link: "/services",
       
     },
     {
       label: "Career",
+      link: "/career",
       
     },
     {
       label: "Contact Us",
-      link: "/contact",
+      link: "/contact_us",
     },
   ];
 
@@ -77,8 +80,6 @@ export const servicesOffer = [
   },
 ];
 
-
-
  export const testimonials = [
       {
           name: "Arnold Burner",
@@ -99,3 +100,83 @@ export const servicesOffer = [
           image: "/assets/client/user3.jpg",
       },
   ];
+
+export const slides = [
+  {
+    image: "https://html.themexriver.com/it-firm/images/resource/case-1.jpg",
+    tag: "Case Studies",
+    title: "Web And Mobile App Development",
+    description: "We deliver best-in-class web and mobile solutions that retain the attention of the target audience.",
+    rightHeading: "Our Penetration Testing Team Uses An Industry",
+    rightText: "We provide the full spectrum of IT services and consulting for various industries.",
+  },
+  {
+    image: "https://html.themexriver.com/it-firm/images/resource/case-2.jpg",
+    tag: "Case Studies",
+    title: "Warranty Management IT",
+    description: "Innovative warranty management systems to streamline operations.",
+    rightHeading: "Smarter Infrastructure Solutions For Your Business",
+    rightText: "We deliver stable, scalable, and reliable IT infrastructure solutions for enterprises.",
+  },
+];
+
+
+export const servicesCard = [
+  {
+    title: "Managed IT Services",
+    icon: "https://html.themexriver.com/it-firm/images/icons/fluid-4.png",
+    image: "https://html.themexriver.com/it-firm/images/resource/service-4.jpg",
+    description:
+      "Our goal is to propel your business forward using world-class IT cybersecurity and technology. We provide expert solutions.",
+  },
+  {
+    title: "Web Development",
+    icon: "https://html.themexriver.com/it-firm/images/icons/fluid-3.png",
+    image: "https://html.themexriver.com/it-firm/images/resource/service-8.jpg",
+    description:
+      "Building scalable, fast, and responsive websites tailored to meet your business goals and customer needs.",
+  },
+  {
+    title: "Security & Compliance",
+    icon: "https://html.themexriver.com/it-firm/images/icons/fluid-2.png",
+    image: "https://html.themexriver.com/it-firm/images/resource/service-7.jpg",
+    description:
+      "Ensure compliance and protect your data with enterprise-grade security strategies.",
+  },
+  {
+    title: "Digital Marketing",
+    icon: "https://html.themexriver.com/it-firm/images/icons/fluid-1.png",
+    image: "https://html.themexriver.com/it-firm/images/resource/service-6.jpg",
+    description:
+      "Reach the right audience at the right time through SEO, social media, and paid ads.",
+  },
+  // Add more services if needed
+];
+
+export const roles = [
+  {
+    id: 1,
+    title: "QA Tester",
+    openings: 5,
+    experience: "2+",
+    objective: "As a QA Tester, you'll play a key role in ensuring product quality by identifying bugs and verifying functionality through rigorous testing.",
+    details: "Requirements include knowledge of software testing methodologies, proficiency in automation tools like Selenium, experience with bug tracking systems (e.g., Jira), and the ability to write comprehensive test cases."
+  },
+  {
+    id: 2,
+    title: "Frontend Developer",
+    openings: 3,
+    experience: "3+",
+    objective: "As a Frontend Developer, you'll be responsible for creating interactive and responsive user interfaces that enhance the user experience.",
+    details: "Candidates must have experience with React.js, strong JavaScript fundamentals, and proficiency in HTML/CSS. Familiarity with responsive design practices and frontend build tools (like Webpack, Vite) is expected."
+  },
+  {
+    id: 3,
+    title: "Backend Developer",
+    openings: 2,
+    experience: "1+",
+    objective: "As a Backend Developer, your role is to build and maintain the server-side logic, ensuring fast performance and smooth data flow between the frontend and backend.",
+    details: "You should have a solid understanding of Node.js, Express.js, RESTful API development, and working knowledge of databases like MongoDB or MySQL. Familiarity with authentication, error handling, and deployment processes is also important."
+  }
+];
+
