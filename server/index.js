@@ -1,3 +1,6 @@
+require("dotenv").config({ path: ".env.local" });
+
+
 const express = require("express");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
@@ -21,8 +24,8 @@ app.post("/send-email", upload.single("file"), async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "n79420953@gmail.com",
-      pass: "llua jzvi fkto dasm", // App password
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
