@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+require("dotenv").config({ path: ".env.local" });
 
 export default function CareerForm({ isOpen, onClose, role }) {
   const [formData, setFormData] = useState({
@@ -31,7 +32,7 @@ export default function CareerForm({ isOpen, onClose, role }) {
   payload.append("file", formData.file);
 
     try {
-      const res = await fetch("http://localhost:3001/send-email", {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/send-email`, {
         method: "POST",
         body: payload, 
       });
