@@ -11,7 +11,11 @@ const fs = require("fs");
 const upload = multer({ dest: "uploads/" });
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://itfirm-theta.vercel.app",
+  methods: ["POST", "GET"],
+  credentials: true,
+}));
 app.use(express.json());
 
 app.post("/send-email", upload.single("file"), async (req, res) => {
@@ -35,10 +39,10 @@ app.post("/send-email", upload.single("file"), async (req, res) => {
     to: "dixitnishkarsh0216@gmail.com",
     subject: `New Application for ${role}`,
     text: `
-Name: ${name}
-Email: ${email}
-Phone: ${number}
-Message: ${message}
+    Email: ${email}
+    Name: ${name}
+    Message: ${message}
+    Phone: ${number}
     `,
     attachments: [
       {

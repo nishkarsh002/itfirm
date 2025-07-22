@@ -31,7 +31,7 @@ export default function CareerForm({ isOpen, onClose, role }) {
   payload.append("file", formData.file);
 
     try {
-      const res = await fetch("REACT_APP_API_URL=https://itfirm-8uc6.onrender.com", {
+      const res = await fetch("https://itfirm-8uc6.onrender.com", {
         method: "POST",
         body: payload, 
       });
