@@ -42,7 +42,7 @@ const Banner = () => {
               >
                 
                 <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-90 transition-opacity duration-300 z-10" />
-                <div className="relative z-20 p-6 flex flex-col items-center">
+                <div className="relative z-20 p-6 flex flex-col items-center border-black border-2">
                   <img
                     src={service.icon}
                     alt={service.title}
