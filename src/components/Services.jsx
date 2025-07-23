@@ -39,9 +39,7 @@ const Service = () => {
                                     className="w-20 h-20 mb-4 mx-auto"
                                 />
                                 <h5 className="text-lg font-semibold mb-2">
-                                    <Link to="/service-details" className="hover:text-blue-600">
                                         {service.title}
-                                    </Link>
                                 </h5>
                                 <p className="text-gray-600 text-sm mb-4">{service.desc}</p>
 

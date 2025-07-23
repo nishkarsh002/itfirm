@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         {/* Left: Image */}
         <div className="relative ">
           <img
-            src="assets/img/about.jpg" 
+            src="assets/img/about.jpg"
             alt="About us"
             className="rounded-xl shadow-lg w-full max-w-md mx-auto mt-[62vh] lg:mt-0"
           />
@@ -48,9 +49,12 @@ const About = () => {
 
           {/* Contact Block */}
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded shadow hover:from-purple-700 hover:to-blue-700 transition">
-              Contact Us →
-            </button>
+            <Link to="/about">
+              <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded shadow hover:from-purple-700 hover:to-blue-700 transition">
+                Contact Us →
+              </button>
+            </Link>
+
 
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">

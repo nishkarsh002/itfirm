@@ -1,6 +1,4 @@
 import {
-  FaArrowRight,
-  FaCalendarAlt,
   FaEnvelope,
   FaFacebookF,
   FaInstagram,
@@ -24,9 +22,11 @@ const Footer = () => {
           </p>
         </div>
         <div>
+          <a href="/contact_us">
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded">
             Get A Quote
           </button>
+         </a>
         </div>
       </div>
 

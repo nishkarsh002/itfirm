@@ -4,11 +4,13 @@ import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import Career from "./pages/Career";
 import ContactUs from "./pages/ContactUs";
+import ScrollTop from "./components/ScrollTop";
 
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
