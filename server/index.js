@@ -54,7 +54,7 @@ app.post("/send-email", upload.single("file"), async (req, res) => {
     `,
     attachments: [
       {
-        filename: file.originalname,
+        filename: file.originalname || "No File Uploded",
         path: file.path,
       },
     ],
