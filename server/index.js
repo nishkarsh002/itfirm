@@ -80,7 +80,7 @@ app.post("/send-email", upload.single("file"), (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.error("Error sending mail:", error);
+      console?.error("Error sending mail:", error);
       return res.status(500).json({ message: "Error sending email" });
     }
     res.status(200).json({ message: "Email sent successfully" });

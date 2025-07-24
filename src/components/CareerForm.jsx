@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+import toast from 'react-hot-toast';
+
 
 export default function CareerForm({ isOpen, onClose, role }) {
+
+  const [status , setStatus] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -10,43 +15,54 @@ export default function CareerForm({ isOpen, onClose, role }) {
   });
 
   const handleChange = (e) => {
-  const { name, value, files } = e.target;
-  if (name === "file") {
-    setFormData((prev) => ({ ...prev, file: files[0] }));
-  } else {
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  }
-};
+    const { name, value, files } = e.target;
+    
+    if (name === "file") {
+      setFormData((prev) => ({ ...prev, file: files[0] }));
+    } else {
+      setFormData((prev) => ({ ...prev, [name]: value }));
+    }
+   
+  };
 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+     setStatus(true);
 
-     const payload = new FormData();
-  payload.append("name", formData.name);
-  payload.append("email", formData.email);
-  payload.append("number", formData.number);
-  payload.append("message", formData.message);
-  payload.append("role", role?.title);
-  payload.append("file", formData.file);
+    const payload = new FormData();
+    payload.append("name", formData.name);
+    payload.append("email", formData.email);
+    payload.append("number", formData.number);
+    payload.append("message", formData.message);
+    payload.append("role", role?.title);
+    payload.append("file", formData.file);
 
-    try {
-      const res = await fetch("https://itfirm-8uc6.onrender.com/send-email", {
-        method: "POST",
-        body: payload, 
-      });
+try {
+  const res = await fetch("https://itfirm-8uc6.onrender.com/send-email", {
+    method: "POST",
+    body: payload,
+  });
 
-      const data = await res.json();
-      if (data.success) {
-        alert("Application sent successfully!");
-        onClose();
-      } else {
-        alert("Failed to send application.");
-      }
-    } catch (error) {
-      console.error("Error sending email:", error);
-      alert("An error occurred.");
-    }
+  // console.log("Raw response:", res);
+
+  if (res.status === 200) {
+   
+    // console.log("Parsed response:", data);
+
+    toast.success("Application sent successfully!");
+    onClose(); // close modal
+  } else {
+    toast.error("Failed to send application.");
+    console.error("Server responded with:", res.status);
+  }
+} catch (error) {
+  // console.error("Error sending email:", error);
+  toast.error("An error occurred while sending application.");
+
+}
+
+
   };
 
 
@@ -111,15 +127,18 @@ export default function CareerForm({ isOpen, onClose, role }) {
               value={formData.message}
               onChange={handleChange}
               className="w-full border px-3 py-2 rounded"
-              
+
             />
           </div>
 
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+            className={`w-full bg-blue-600 text-white py-2 rounded ${
+            status ? "cursor-not-allowed opacity-70" : "hover:bg-blue-700"
+             }`}
+            disabled= {status}
           >
-            Submit
+             {status ? "Sending..." : "Submit"}
           </button>
         </form>
 

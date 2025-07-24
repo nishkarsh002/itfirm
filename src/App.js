@@ -6,6 +6,7 @@ import Career from "./pages/Career";
 import ContactUs from "./pages/ContactUs";
 import ScrollTop from "./components/ScrollTop";
 
+import { Toaster } from "react-hot-toast"; // ✅ import Toaster
 
 function App() {
   return (
@@ -18,6 +19,14 @@ function App() {
         <Route path="/career" element={<Career />} />
         <Route path="/contact_us" element={<ContactUs />} />
       </Routes>
+
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          className: "text-sm font-medium rounded-md",
+          duration: 3000,
+        }}
+      />
     </BrowserRouter>
   );
 }
