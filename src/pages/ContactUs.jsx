@@ -6,7 +6,7 @@ const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    number: "",
     subject: "",
     message: "",
   });
@@ -35,7 +35,7 @@ const ContactUs = () => {
 
       if (res.ok) {
         setStatus("Message sent successfully!");
-        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        setFormData({ name: '', email: '', number: '', subject: '', message: '' });
       } else {
         setStatus("Failed to send message.");
       }
@@ -143,8 +143,8 @@ const ContactUs = () => {
                   <label className="font-semibold text-sm">Phone (optional)</label>
                   <input
                     type="text"
-                    name="phone"
-                    value={formData.phone}
+                    name="number"
+                    value={formData.number}
                     onChange={handleChange}
                     placeholder="Phone"
                     className="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-blue-500"

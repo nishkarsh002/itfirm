@@ -26,49 +26,59 @@ app.use(cors({
 
 app.use(express.json());
 
-app.post("/send-email", upload.single("file"), async (req, res) => {
-  const { name, email, number, message, role } = req.body;
-  const file = req.file; // Uploaded file info
+app.post("/send-email", upload.single("file"), (req, res) => {
+  const { name, email, number, message, role,subject } = req.body;
+  const file = req.file;
 
-  console.log({ name, email, number, message, role, file });
-
-  // Create transporter
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-  });
-
-  // Build mail options
-  const mailOptions = {
+  let mailOptions = {
     from: email,
     to: "dixitnishkarsh0216@gmail.com",
-    subject: `New Application for ${role}`,
-    text: `
-    Email: ${email}
-    Name: ${name}
-    Message: ${message}
-    Phone: ${number}
-    `,
-    attachments: [
-      {
-        filename: file.originalname || "No File Uploded",
-        path: file.path,
-      },
-    ],
+    subject: "",
+    text: "",
   };
 
-  try {
-    await transporter.sendMail(mailOptions);
-    fs.unlinkSync(file.path);
-    res.status(200).json({ success: true });
-  } catch (err) {
-    console.error("Email send failed:", err);
-    res.status(500).json({ success: false, error: err.message });
+  // 💼 If role is present, it's likely from the Career form
+  if (role) {
+    mailOptions.subject = `New Application for ${role}`;
+    mailOptions.text = `
+      Email: ${email}
+      Name: ${name}
+      Message: ${message}
+      Phone: ${number}
+      Applied Role: ${role}
+    `;
+
+    if (file) {
+      mailOptions.attachments = [
+        {
+          filename: file.originalname,
+          path: file.path,
+        },
+      ];
+    }
+
+  } else {
+    // 📩 Contact Form
+    mailOptions.subject = `New Message from Contact Form`;
+    mailOptions.text = `
+      Email: ${email}
+      Name: ${name}
+      Phone: ${number}
+      Message: ${message}
+      Subject: ${subject}
+    `;
+    // no attachments
   }
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("Error sending mail:", error);
+      return res.status(500).json({ message: "Error sending email" });
+    }
+    res.status(200).json({ message: "Email sent successfully" });
+  });
 });
+
 
 
 const PORT = process.env.PORT || 3001;
