@@ -10,6 +10,14 @@ const fs = require("fs");
 
 const upload = multer({ dest: "uploads/" });
 
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+  },
+});
+
 const app = express();
 const allowedOrigins = ['http://localhost:3000', 'https://itfirm-theta.vercel.app'];
 
