@@ -1,8 +1,53 @@
-
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import  { useState } from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const ContactUs = () => {
+  const [formData , setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const [status , setStatus] = useState("");
+
+  
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    const payload = new FormData();
+    payload.append("name", formData.name);
+    payload.append("email", formData.email);
+    payload.append("phone", formData.phone);
+    payload.append("subject", formData.subject);
+    payload.append("message", formData.message);
+
+    try {
+      const res = await fetch("https://itfirm-8uc6.onrender.com/send-email", {
+        method: "POST",
+        body: payload
+      });
+
+      if (res.ok) {
+        setStatus("Message sent successfully!");
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+      } else {
+        setStatus("Failed to send message.");
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus("Something went wrong.");
+    }
+  };
+
+
   return (
     <div>
       <Navbar />
@@ -70,12 +115,16 @@ const ContactUs = () => {
 
         {/* Right Side - Contact Form */}
         <div className="bg-blue-50 p-8 rounded shadow-sm">
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
+               <div>
                 <label className="font-semibold text-sm">Name (required)</label>
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
                   placeholder="Your name*"
                   className="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-blue-500"
                 />
@@ -84,6 +133,10 @@ const ContactUs = () => {
                 <label className="font-semibold text-sm">Email address (required)</label>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                   placeholder="Email"
                   className="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-blue-500"
                 />
@@ -92,6 +145,9 @@ const ContactUs = () => {
                 <label className="font-semibold text-sm">Phone (optional)</label>
                 <input
                   type="text"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   placeholder="Phone"
                   className="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-blue-500"
                 />
@@ -100,6 +156,10 @@ const ContactUs = () => {
                 <label className="font-semibold text-sm">Subject (required)</label>
                 <input
                   type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
                   placeholder="Subject"
                   className="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-blue-500"
                 />
@@ -109,6 +169,10 @@ const ContactUs = () => {
               <label className="font-semibold text-sm">Your message</label>
               <textarea
                 rows="5"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
                 placeholder="Your text here..."
                 className="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-blue-500"
               ></textarea>
@@ -119,6 +183,7 @@ const ContactUs = () => {
             >
               Send Message
             </button>
+            {status && <p className="mt-4 text-sm text-green-700">{status}</p>}
           </form>
         </div>
       </div>

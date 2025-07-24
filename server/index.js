@@ -11,11 +11,19 @@ const fs = require("fs");
 const upload = multer({ dest: "uploads/" });
 
 const app = express();
+const allowedOrigins = ['http://localhost:3000', 'https://itfirm-theta.vercel.app'];
+
 app.use(cors({
-  origin: "https://itfirm-theta.vercel.app",
-  methods: ["POST", "GET"],
-  credentials: true,
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
 }));
+
 app.use(express.json());
 
 app.post("/send-email", upload.single("file"), async (req, res) => {
