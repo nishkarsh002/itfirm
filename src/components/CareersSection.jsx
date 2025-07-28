@@ -12,17 +12,6 @@ export default function CareersSection() {
 
   return (
     <>
-      {/* Header Section */}
-      {/* <section className="relative h-[40vh] flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
-        <div>
-          <h1 className="text-4xl font-bold mb-4">Start your career at MyCompany</h1>
-          <p className="text-lg max-w-2xl mx-auto">
-            Unlock opportunities to grow your career and skills with a passionate team. We foster an environment of learning, growth, and innovation.
-          </p>
-        </div>
-      </section> */}
-
-      {/* Open Positions Intro */}
       <div className="bg-gray-100 py-12 px-4 md:px-20 text-center">
         <h2 className="text-3xl font-bold mb-4">Start your career at ItFirm</h2>
         <p className="text-gray-700 text-xl max-w-xl mx-auto">
@@ -31,7 +20,9 @@ export default function CareersSection() {
         
       </div>
 
-      <p className="text-center text-2xl font-bold py-4">Current Openings – Be a Part of Something Big</p>
+<p className="text-center text-xl sm:text-2xl lg:text-4xl font-bold py-3 sm:py-4 font-magical bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text text-transparent drop-shadow-md px-2 sm:px-0 leading-snug">
+  Current Openings – Be a Part of Something Big
+</p>
 
 
       {/* Cards Section */}

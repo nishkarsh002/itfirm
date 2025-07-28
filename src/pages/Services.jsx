@@ -65,34 +65,34 @@ const Services = () => {
           ))}
         </div>
       </div>
+      <div className="flex flex-col lg:flex-row py-10 bg-[#f1f4f9] text-gray-800 gap-8">
+        {/* Left - Image Slide */}
+        <div className="relative w-full lg:w-1/2 h-[300px] lg:h-[500px] rounded-xl overflow-hidden shadow-md">
+  <img
+    src={slide.image}
+    alt="Slide"
+    className="w-full h-full object-center object-cover"
+  />
 
-      <div className="flex flex-col lg:flex-row py-10 bg-[#f1f4f9] text-gray-800">
-        {/* Left - Image with overlay content */}
-        <div className="relative w-full lg:w-1/2 h-[500px]">
-          <img
-            src={slide.image}
-            alt="Slide"
-            className="w-full h-full object-cover transition-all duration-500"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20 text-white p-10 flex flex-col justify-center">
-            <div className="flex gap-4 mt-6">
-              <button
-                onClick={prevSlide}
-                className="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center shadow hover:bg-blue-100"
-              >
-                <FaChevronLeft />
-              </button>
-              <button
-                onClick={nextSlide}
-                className="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center shadow hover:bg-blue-100"
-              >
-                <FaChevronRight />
-              </button>
-            </div>
-          </div>
-        </div>
+  <div className="absolute inset-0 flex items-center justify-between px-4 sm:px-6">
+    <button
+      onClick={prevSlide}
+      className="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center shadow hover:bg-blue-100 transition"
+    >
+      <FaChevronLeft />
+    </button>
+    <button
+      onClick={nextSlide}
+      className="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center shadow hover:bg-blue-100 transition"
+    >
+      <FaChevronRight />
+    </button>
+  </div>
+</div>
 
-        {/* Right - Textual Info */}
+
+
+
         <div className="w-full lg:w-1/2 p-10 flex flex-col justify-center bg-[#f1f4f9]">
           <p className="text-blue-600 font-semibold flex items-center gap-2">
             Who We Are? <FaArrowRight />
@@ -106,35 +106,7 @@ const Services = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-            {/* Item 1 */}
-            {/* <div className="flex flex-col items-center">
-              <div className="w-24 h-24 flex items-center justify-center rounded-full border-4 border-blue-600 bg-white shadow-lg mb-4">
-                <img
-                  src="assets/Icon/2.png"
-                  alt="Digital Marketer"
-                  className="w-12 h-12 object-contain"
-                />
-              </div>
-              <h4 className="font-bold text-xl">Digital Marketer</h4>
-              <p className="text-gray-600 text-sm mt-2 px-4">
-                Our customers get solutions and business opportunities instead of just projects. Our mission is to accelerate.
-              </p>
-            </div> */}
 
-            {/* Item 2 */}
-            {/* <div className="flex flex-col items-center">
-              <div className="w-24 h-24 flex items-center justify-center rounded-full border-4 border-blue-600 bg-white shadow-lg mb-4">
-                <img
-                  src="assets/Icon/4.png"
-                  alt="Global Entrepreneur"
-                  className="w-12 h-12 object-contain"
-                />
-              </div>
-              <h4 className="font-bold text-xl">Global Entrepreneur</h4>
-              <p className="text-gray-600 text-sm mt-2 px-4">
-                Our customers get solutions and business opportunities instead of just projects. Our mission is to accelerate.
-              </p>
-            </div> */}
           </div>
 
         </div>

@@ -104,9 +104,6 @@ export const servicesOffer = [
 export const slides = [
   {
     image: "assets/img/react.jpg",
-    // tag: "Case Studies",
-    // title: "Web And Mobile App Development",
-    // description: "We deliver best-in-class web and mobile solutions that retain the attention of the target audience.",
     rightHeading: "Our Penetration Testing Team Uses An Industry",
     rightText: "We provide the full spectrum of IT services and consulting for various industries.",
   },
