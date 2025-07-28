@@ -14,13 +14,12 @@ const AboutUs = () => {
       <Navbar />
       {/* About Hero Section */}
       <div className="relative h-[400px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('../assets/test/img.jpg')" }}>
-        {/* <div className="absolute inset-0 opacity-75" ></div> */}
-        <h1 className="text-5xl font-bold text-white relative z-10">About Us</h1>
+              <h1 className="text-5xl font-bold text-white relative z-10">About Us</h1>
       </div>
 
-      {/* Intro Section */}
+  
       <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-between">
-        {/* Left Text Section */}
+
         <div className="lg:w-1/2 mb-10 lg:mb-0">
           <h2 className="text-blue-700 font-semibold mb-2">About Us</h2>
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -48,9 +47,9 @@ const AboutUs = () => {
         </div>
 
         {/* Right Image Section */}
-        <div className="lg:w-1/2 flex flex-col items-center justify-center px-8 border-2 border-blue-50 ">
+        <div className=" lg:w-1/2 flex flex-col items-center justify-center px-8 border-2 border-blue-50 ">
 
-          <img src="assets/client/about_banner.jpg" alt="" />
+          <img src="assets/client/about_banner.jpg" alt="banner img" className="hidden lg:block"/>
 
 
         </div>
