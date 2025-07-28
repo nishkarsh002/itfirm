@@ -22,7 +22,7 @@ const Services = () => {
     <div>
       <Navbar />
 
-      <div className="relative h-[400px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('https://html.themexriver.com/it-firm/images/background/7.jpg')" }}>
+      <div className="relative h-[400px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('../assets/test/all_banner.jpg')" }}>
         {/* <div className="absolute inset-0 opacity-75" ></div> */}
         <h1 className="text-5xl font-bold text-white relative z-10">Our <span className='text-blue-400'>Services</span> </h1>
       </div>
@@ -117,7 +117,7 @@ const Services = () => {
   <div className="flex flex-col items-center">
     <div className="w-24 h-24 flex items-center justify-center rounded-full border-4 border-blue-600 bg-white shadow-lg mb-4">
       <img
-        src="https://html.themexriver.com/it-firm/images/icons/fluid-1.png"
+        src="assets/Icon/2.png"
         alt="Digital Marketer"
         className="w-12 h-12 object-contain"
       />
@@ -132,7 +132,7 @@ const Services = () => {
   <div className="flex flex-col items-center">
     <div className="w-24 h-24 flex items-center justify-center rounded-full border-4 border-blue-600 bg-white shadow-lg mb-4">
       <img
-        src="https://html.themexriver.com/it-firm/images/icons/fluid-2.png"
+        src="assets/Icon/4.png"
         alt="Global Entrepreneur"
         className="w-12 h-12 object-contain"
       />

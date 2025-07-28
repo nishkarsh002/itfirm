@@ -11,7 +11,7 @@ const Career = () => {
       <Navbar />
 
 
-      <div className="relative h-[400px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('https://html.themexriver.com/it-firm/images/background/7.jpg')" }}>
+      <div className="relative h-[400px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('../assets/test/all_banner.jpg')" }}>
         {/* <div className="absolute inset-0 opacity-75" ></div> */}
         <h1 className="text-5xl font-bold text-white relative z-10"> Career</h1>
       </div>

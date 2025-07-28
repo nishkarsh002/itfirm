@@ -9,9 +9,9 @@ const About = () => {
         {/* Left: Image */}
         <div className="relative ">
           <img
-            src="assets/img/about.jpg"
+            src="assets/test/about_test.jpg"
             alt="About us"
-            className="rounded-xl shadow-lg w-full max-w-md mx-auto mt-[62vh] lg:mt-0"
+            className="rounded-xl shadow-lg w-full max-w-md mx-auto mt-[62vh]  border-2 border-black lg:mt-0"
           />
         </div>
 
@@ -34,13 +34,13 @@ const About = () => {
           {/* Features Row */}
           <div className="grid grid-cols-2 gap-6 mb-8">
             <div className="flex items-center space-x-3">
-              <img src="https://html.themexriver.com/it-firm/images/icons/about-1.png" alt="icon" className="w-10 h-10" />
+              <img src="assets/Icon/4.png" alt="icon" className="w-10 h-10" />
               <div>
                 <h5 className="font-semibold text-sm">Moneyback Guarantee</h5>
               </div>
             </div>
             <div className="flex items-center space-x-3">
-              <img src="https://html.themexriver.com/it-firm/images/icons/about-2.png" alt="icon" className="w-10 h-10" />
+              <img src="assets/Icon/5.png" alt="icon" className="w-10 h-10" />
               <div>
                 <h5 className="font-semibold text-sm">Technical Support</h5>
               </div>
@@ -49,7 +49,7 @@ const About = () => {
 
           {/* Contact Block */}
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <Link to="/about">
+            <Link to="/contact_us">
               <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded shadow hover:from-purple-700 hover:to-blue-700 transition">
                 Contact Us →
               </button>

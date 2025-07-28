@@ -9,7 +9,7 @@ const Banner = () => {
     <div
       className="relative bg-cover bg-center mb-40 pb-40"
       style={{
-        backgroundImage: 'url("../assets/img/banner.jpg")',
+        backgroundImage: 'url("../assets/test/banner_test.jpg")',
         height: "100vh",
       }}
     >

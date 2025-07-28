@@ -13,7 +13,7 @@ const AboutUs = () => {
 
       <Navbar />
       {/* About Hero Section */}
-      <div className="relative h-[400px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('https://html.themexriver.com/it-firm/images/background/7.jpg')" }}>
+      <div className="relative h-[400px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('../assets/test/all_banner.jpg')" }}>
         {/* <div className="absolute inset-0 opacity-75" ></div> */}
         <h1 className="text-5xl font-bold text-white relative z-10">About <span className='text-blue-400'>Us</span> </h1>
       </div>
@@ -50,7 +50,7 @@ const AboutUs = () => {
           {/* Circular Image */}
           <div className="w-80 h-80 rounded-full border-[10px] border-blue-600 overflow-hidden flex items-center justify-center shadow-md z-0">
             <img
-              src="https://html.themexriver.com/it-firm/images/resource/about-4.jpg"
+              src="assets/img/center.jpg"
               alt="Company"
               className="w-full h-full object-cover"
             />

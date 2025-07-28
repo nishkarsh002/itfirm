@@ -70,12 +70,12 @@ export const servicesOffer = [
   },
   {
     title: "SEO & Performance Optimization",
-    img: "https://html.themexriver.com/it-firm/images/icons/about-1.png",
+    img: "assets/Icon/4.png",
     desc: "Increase your organic traffic and page performance with keyword-driven, technical SEO best practices.",
   },
   {
     title: "Cloud Hosting & Support",
-    img: "https://html.themexriver.com/it-firm/images/icons/about-2.png",
+    img: "assets/Icon/5.png",
     desc: "Deploy and scale your apps seamlessly using AWS, GCP, or Azure with 24/7 DevOps support.",
   },
 ];
@@ -103,7 +103,7 @@ export const servicesOffer = [
 
 export const slides = [
   {
-    image: "https://html.themexriver.com/it-firm/images/resource/case-1.jpg",
+    image: "assets/img/slide1.jpg",
     tag: "Case Studies",
     title: "Web And Mobile App Development",
     description: "We deliver best-in-class web and mobile solutions that retain the attention of the target audience.",
@@ -111,7 +111,7 @@ export const slides = [
     rightText: "We provide the full spectrum of IT services and consulting for various industries.",
   },
   {
-    image: "https://html.themexriver.com/it-firm/images/resource/case-2.jpg",
+    image: "assets/img/slide2.jpg",
     tag: "Case Studies",
     title: "Warranty Management IT",
     description: "Innovative warranty management systems to streamline operations.",
@@ -124,33 +124,32 @@ export const slides = [
 export const servicesCard = [
   {
     title: "Managed IT Services",
-    icon: "https://html.themexriver.com/it-firm/images/icons/fluid-4.png",
-    image: "https://html.themexriver.com/it-firm/images/resource/service-4.jpg",
+    icon: "../assets/Icon/card1.png",
+    image: "../assets/img/service1.avif",
     description:
       "Our goal is to propel your business forward using world-class IT cybersecurity and technology. We provide expert solutions.",
   },
   {
     title: "Web Development",
-    icon: "https://html.themexriver.com/it-firm/images/icons/fluid-3.png",
-    image: "https://html.themexriver.com/it-firm/images/resource/service-8.jpg",
+    icon: "../assets/Icon/card2.png",
+    image: "../assets/img/service2.avif",
     description:
       "Building scalable, fast, and responsive websites tailored to meet your business goals and customer needs.",
   },
   {
     title: "Security & Compliance",
-    icon: "https://html.themexriver.com/it-firm/images/icons/fluid-2.png",
-    image: "https://html.themexriver.com/it-firm/images/resource/service-7.jpg",
+    icon: "../assets/Icon/card3.png",
+    image: "../assets/img/service3.avif",
     description:
       "Ensure compliance and protect your data with enterprise-grade security strategies.",
   },
   {
     title: "Digital Marketing",
-    icon: "https://html.themexriver.com/it-firm/images/icons/fluid-1.png",
-    image: "https://html.themexriver.com/it-firm/images/resource/service-6.jpg",
+    icon: "../assets/Icon/card4.png",
+    image: "../assets/img/service4.avif",
     description:
       "Reach the right audience at the right time through SEO, social media, and paid ads.",
   },
-  // Add more services if needed
 ];
 
 export const roles = [
