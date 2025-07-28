@@ -25,10 +25,14 @@ export default function CareersSection() {
       {/* Open Positions Intro */}
       <div className="bg-gray-100 py-12 px-4 md:px-20 text-center">
         <h2 className="text-3xl font-bold mb-4">Start your career at ItFirm</h2>
-        <p className="text-gray-700 max-w-xl mx-auto">
+        <p className="text-gray-700 text-xl max-w-xl mx-auto">
           We're looking for talented engineers and tech enthusiasts who want to build great products and grow with us.
         </p>
+        
       </div>
+
+      <p className="text-center text-2xl font-bold py-4">Current Openings – Be a Part of Something Big</p>
+
 
       {/* Cards Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-20 pb-20">

@@ -23,14 +23,14 @@ const Navbar = () => {
       <nav className="bg-white shadow relative z-30">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           
-          <div
+          {/* <div
             className="bg-gradient-to-r from-indigo-600 to-indigo-400 px-6 py-2"
             style={{ clipPath: "polygon(0 0, 100% 0, 80% 100%, 0% 100%)" }}
-          >
+          > */}
             <Link to="/">
-              <img src="../assets/img/logo.png" alt="Logo" className="h-10" />
+              <img src="../assets/img/logo4.jpg" alt="Logo" className="h-16" />
             </Link>
-          </div>
+          {/* </div> */}
 
          
           <ul className="hidden lg:flex items-center gap-6 text-sm font-medium">

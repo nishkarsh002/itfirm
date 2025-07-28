@@ -26,7 +26,7 @@
 
  export const services = [
   {
-    title: "Business Analytics",
+    title: "Digital Growth & SEO",
     icon: "../assets/Icon/card1.png",
   },
   {
@@ -34,15 +34,15 @@
     icon: "/assets/Icon/card2.png",
   },
   {
-    title: "Big Data Analytics",
+    title: "Resource Outsourcing",
     icon: "/assets/Icon/card3.png",
   },
   {
-    title: "Cyber Security",
+    title: "Tailored Software Solutions",
     icon: "/assets/Icon/card4.png",
   },
   {
-    title: "Mobile App",
+    title: "Upskill with Expert Trainning ",
     icon: "/assets/Icon/card5.png",
   },
 ];
@@ -82,39 +82,46 @@ export const servicesOffer = [
 
  export const testimonials = [
       {
-          name: "Arnold Burner",
-          title: "Senior Developer",
-          feedback: "The client appreciates their flexibility in terms. They helped develop an app with commendable UI/UX.",
-          image: "/assets/client/user1.jpg", 
+          name: "Mahindra Logistics",
+          // title: "Senior Developer",
+          feedback: "A reliable tech partner that truly understands business needs. From planning to deployment, everything was handled with precision.",
+          image: "/assets/client/cl1.webp", 
       },
       {
-          name: "Sophie Turner",
-          title: "Project Manager",
-          feedback: "Reliable and responsive! Their support team helped us integrate solutions quickly and effectively.",
-          image: "/assets/client/user2.jpg",
+          name: "Girnarsoft",
+          // title: "Project Manager",
+          feedback: "Great collaboration and timely execution. ITfirm’s development expertise helped us scale faster and improve performance across platforms.",
+          image: "/assets/client/cl2.webp",
       },
       {
-          name: "Michael Chen",
-          title: "CTO, TechnoSoft",
-          feedback: "Great partnership. We scaled faster thanks to their professional delivery and agile process.",
-          image: "/assets/client/user3.jpg",
+          name: "Appture",
+          // title: "CTO, TechnoSoft",
+          feedback: "Great collaboration and timely execution. ITfirm’s development expertise helped us scale faster and improve performance across platforms.",
+          image: "/assets/client/cl3.webp",
       },
   ];
 
 export const slides = [
   {
-    image: "assets/img/slide1.jpg",
-    tag: "Case Studies",
-    title: "Web And Mobile App Development",
-    description: "We deliver best-in-class web and mobile solutions that retain the attention of the target audience.",
+    image: "assets/img/react.jpg",
+    // tag: "Case Studies",
+    // title: "Web And Mobile App Development",
+    // description: "We deliver best-in-class web and mobile solutions that retain the attention of the target audience.",
     rightHeading: "Our Penetration Testing Team Uses An Industry",
     rightText: "We provide the full spectrum of IT services and consulting for various industries.",
   },
   {
-    image: "assets/img/slide2.jpg",
-    tag: "Case Studies",
-    title: "Warranty Management IT",
-    description: "Innovative warranty management systems to streamline operations.",
+    image: "assets/img/js.webp",
+    rightHeading: "Smarter Infrastructure Solutions For Your Business",
+    rightText: "We deliver stable, scalable, and reliable IT infrastructure solutions for enterprises.",
+  },
+  {
+    image: "assets/img/node.webp",
+    rightHeading: "Smarter Infrastructure Solutions For Your Business",
+    rightText: "We deliver stable, scalable, and reliable IT infrastructure solutions for enterprises.",
+  },
+   {
+    image: "assets/img/java.png",
     rightHeading: "Smarter Infrastructure Solutions For Your Business",
     rightText: "We deliver stable, scalable, and reliable IT infrastructure solutions for enterprises.",
   },
@@ -137,11 +144,11 @@ export const servicesCard = [
       "Building scalable, fast, and responsive websites tailored to meet your business goals and customer needs.",
   },
   {
-    title: "Security & Compliance",
+    title: "Resource Outsourcing",
     icon: "../assets/Icon/card3.png",
-    image: "../assets/img/service3.avif",
+    image: "../assets/img/service3.jpg",
     description:
-      "Ensure compliance and protect your data with enterprise-grade security strategies.",
+      "Get access to skilled developers, designers, and marketers on-demand Our flexible outsourcing solutions scale with your business needs.",
   },
   {
     title: "Digital Marketing",

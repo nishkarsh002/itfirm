@@ -21,7 +21,7 @@ const Banner = () => {
     </h6>
 
     <h2 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight mb-6 drop-shadow-sm">
-      Revolutionize Your Workflow <br className="hidden md:block" /> With <span className="text-blue-400">ITFirm</span>
+      Revolutionize Your Workflow <br className="hidden md:block" /> With <span className="text-blue-400">MileaZo</span>
     </h2>
 
     <p className="text-sm md:text-lg font-light leading-relaxed text-white/90">
@@ -64,19 +64,18 @@ const Banner = () => {
 
           {/* Left: Text Section */}
           <div className="w-1/2 text-xl font-semibold text-gray-800">
-            Join over <span className="text-blue-600 font-bold">+15,000</span> happy clients!
+            Our Happy Clients, Our Biggest Achievement
           </div>
 
           {/* Right: Marquee Section */}
           <div className="w-1/2">
             <Marquee gradient={false} speed={50}>
               {[
-                "assets/client/1.svg",
-                "assets/client/2.svg",
-                "assets/client/3.svg",
-                "assets/client/4.svg",
-                "assets/client/1.svg",
-                "assets/client/2.svg",
+              
+                "assets/client/cl1.webp",
+                "assets/client/cl2.webp",
+                "assets/client/cl3.webp",
+                
               ].map((src, index) => (
                 <div key={index} className="mx-6">
                   <img src={src} alt="client-logo" className="h-12 w-auto" />

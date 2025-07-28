@@ -13,9 +13,9 @@ const AboutUs = () => {
 
       <Navbar />
       {/* About Hero Section */}
-      <div className="relative h-[400px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('../assets/test/all_banner.jpg')" }}>
+      <div className="relative h-[400px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('../assets/test/img.jpg')" }}>
         {/* <div className="absolute inset-0 opacity-75" ></div> */}
-        <h1 className="text-5xl font-bold text-white relative z-10">About <span className='text-blue-400'>Us</span> </h1>
+        <h1 className="text-5xl font-bold text-white relative z-10">About Us</h1>
       </div>
 
       {/* Intro Section */}
@@ -27,10 +27,18 @@ const AboutUs = () => {
             Choose <span className="text-blue-700">The Best</span> IT Service Company
           </h1>
           <p className="text-gray-600 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt ut labore et dolore magna.
+            When it comes to digital transformation, choosing the right IT partner makes all the difference. At
+            <b> Mileazo
+            </b>, we combine innovation, reliability, and expertise to deliver solutions that truly make an impact. Whether you need <b>web development, mobile apps, digital marketing, or custom software </b>  — we provide end-to-end services tailored to your goals.
           </p>
           <p className="text-gray-700 mb-4">
-            An IT firm or MSP who keeps your IT running smoothly at all times is like a plumber who fixes your pipes.
+            We also specialize in resource outsourcing and dedicated development support, giving you access to skilled professionals who work as an extension of your team. From short-term tasks to long-term collaborations, our flexible engagement models ensure you get the right talent at the right time.
+            <br />
+            <br />
+            With a client-first approach, experienced professionals, and a strong commitment to quality, we ensure every project is a success. Choose
+            <b> Mileazo
+
+            </b> — where your vision meets smart technology, and your business gets the support it needs to grow faster.
           </p>
           <Link to="/career">
             <button className="bg-blue-700 text-white px-6 py-3 rounded shadow hover:bg-blue-800 transition">
@@ -40,43 +48,18 @@ const AboutUs = () => {
         </div>
 
         {/* Right Image Section */}
-        <div className="lg:w-1/2 relative flex flex-col items-center justify-center mt-10">
-          {/* Top Left Badge */}
-          <div className="absolute -top-6 -left-6 bg-gradient-to-br from-blue-600 to-blue-400 text-white px-4 py-2 rounded-xl shadow-lg z-10 w-32 text-center">
-            <p className="text-xl font-bold">12</p>
-            <p className="text-sm leading-tight">years of<br />experiences</p>
-          </div>
+        <div className="lg:w-1/2 flex flex-col items-center justify-center px-8 border-2 border-blue-50 ">
 
-          {/* Circular Image */}
-          <div className="w-80 h-80 rounded-full border-[10px] border-blue-600 overflow-hidden flex items-center justify-center shadow-md z-0">
-            <img
-              src="assets/img/center.jpg"
-              alt="Company"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <img src="assets/client/about_banner.jpg" alt="" />
 
-          {/* Award Section Below */}
-          <div className="mt-10 bg-white shadow-lg px-8 pb-6 rounded-xl w-[90%] max-w-lg text-center z-10">
-            <div className="flex flex-col items-center">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/616/616490.png"
-                alt="Star Icon"
-                className="w-6 h-6 mb-2"
-              />
-              <strong className="text-lg font-semibold">Best Awarded Company</strong>
-              <p className="text-sm text-gray-600 mt-2">
-                We adapt our delivery to the way your work, whether as an external provider.
-              </p>
-            </div>
-          </div>
+
         </div>
       </div>
 
       {/* Timeline Section */}
-      <div className="bg-gray-100 py-12">
+      {/* <div className="bg-gray-100 py-12">
         <div className="container mx-auto px-4 flex items-center">
-          {/* Left Arrow */}
+         
           <button
             onClick={() => scrollRef.current.scrollBy({ left: -300, behavior: "smooth" })}
             className="bg-white p-2 rounded-full shadow mx-2 text-blue-600 hover:bg-blue-50"
@@ -84,7 +67,7 @@ const AboutUs = () => {
             <FaArrowLeft />
           </button>
 
-          {/* Scrollable Timeline */}
+          
           <div
             ref={scrollRef}
             className="flex overflow-x-auto gap-6 scrollbar-hide scroll-smooth"
@@ -113,7 +96,7 @@ const AboutUs = () => {
             ))}
           </div>
 
-          {/* Right Arrow */}
+        
           <button
             onClick={() => scrollRef.current.scrollBy({ left: 300, behavior: "smooth" })}
             className="bg-white p-2 rounded-full shadow mx-2 text-blue-600 hover:bg-blue-50"
@@ -121,11 +104,11 @@ const AboutUs = () => {
             <FaArrowRight />
           </button>
         </div>
-      </div>
+      </div> */}
 
 
       {/* Team Section */}
-      <div className="container mx-auto px-4 py-16 text-center">
+      {/* <div className="container mx-auto px-4 py-16 text-center">
         <h2 className="text-blue-700 font-semibold mb-2">Team Member</h2>
         <h1 className="text-3xl lg:text-4xl font-bold mb-10">
           Passionate Personalities, <span className="text-blue-700">Versatile</span> Brains
@@ -154,7 +137,7 @@ const AboutUs = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

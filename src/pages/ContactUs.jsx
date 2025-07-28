@@ -53,9 +53,9 @@ const ContactUs = () => {
     <div>
       <Navbar />
 
-      <div className="relative h-[400px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('../assets/test/all_banner.jpg')" }}>
+      <div className="relative h-[400px] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('../assets/test/img.jpg')" }}>
         <h1 className="text-5xl font-bold text-white relative z-10">
-          Contact <span className='text-blue-400'>Us</span>
+          Contact <span className='text-white'>Us</span>
         </h1>
       </div>
 
@@ -81,9 +81,9 @@ const ContactUs = () => {
               <div>
                 <h4 className="font-bold text-lg mb-1">Office address</h4>
                 <p>
-                  Digital Agency Network <br />
-                  20 Eastbourne Terrace <br />
-                  London W2 6LG
+                  Office FF 25, JTM Mall,<br />
+                  Model Town, Jagatpura, <br />
+                  Jaipur, Rajasthan  302017
                 </p>
               </div>
             </div>
@@ -93,8 +93,7 @@ const ContactUs = () => {
               <img src="https://html.themexriver.com/it-firm/images/icons/contact-2.png" alt="phone" />
               <div>
                 <h4 className="font-bold text-lg mb-1">Telephone number</h4>
-                <p>(408) 389-5470</p>
-                <p>(408) 456-5470</p>
+                <p>0 (141) 2729706</p>
               </div>
             </div>
 
@@ -103,8 +102,7 @@ const ContactUs = () => {
               <img src="https://html.themexriver.com/it-firm/images/icons/contact-3.png" alt="email" />
               <div>
                 <h4 className="font-bold text-lg mb-1">Mail address</h4>
-                <p>me@gmail.com</p>
-                <p>me@gmail.com</p>
+                <p>info@appturetechnology.com</p>
               </div>
             </div>
           </div>

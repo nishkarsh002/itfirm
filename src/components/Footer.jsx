@@ -2,6 +2,7 @@ import {
   FaEnvelope,
   FaFacebookF,
   FaInstagram,
+  FaLinkedin,
   FaPhoneAlt,
   FaTwitter,
   FaYoutube,
@@ -36,7 +37,7 @@ const Footer = () => {
           {/* Column 1: About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="../assets/img/logo.png" alt="logo" className="h-12" />
+              <img src="../assets/img/logo4.jpg" alt="logo" className="h-12" />
             </div>
             <p className="text-sm mb-4">
               We work with a passion of taking challenges and creating new ones in the advertising sector.
@@ -55,10 +56,19 @@ const Footer = () => {
               Follow Us
             </h4>
             <div className="flex gap-4 mt-4 text-gray-400 text-3xl">
+              <a href="https://www.facebook.com/p/Mileazo-100077308435735/" target="_blank">
               <FaFacebookF className="hover:text-white transition" />
-              <FaTwitter className="hover:text-white transition" />
+              </a>
+              
+              <a href="https://www.linkedin.com/company/mileazo/?originalSubdomain=in" target="_blank"> 
+              <FaLinkedin className="hover:text-white transition" />
+              </a>
+              
+              <a href="https://www.instagram.com/mileazo/" target="_blank">
               <FaInstagram className="hover:text-white transition" />
-              <FaYoutube className="hover:text-white transition" />
+              </a>
+
+              {/* <FaYoutube className="hover:text-white transition" /> */}
             </div>
           </div>
 
@@ -70,17 +80,19 @@ const Footer = () => {
             <ul className="text-sm space-y-2">
               <li className="flex items-center gap-2">
                 <FaPhoneAlt className="text-blue-400" />
-                Flim City, 16A Noida, India
+                0 (141) 2729706
               </li>
               <li className="flex items-center gap-2">
                 <FaEnvelope className="text-blue-400" />
-                1-888-452-1505
+                info@appturetechnology.com
               </li>
-              <li className="mt-2">
-                <strong>Open Hours:</strong>
-                <p>Mon – Sat: 8am – 5pm</p>
-                <p>Sunday: CLOSED</p>
+              <li className="flex items-center gap-2">
+               
+                Office FF 25, JTM Mall,<br />
+                  Model Town, Jagatpura, <br />
+                  Jaipur, Rajasthan  302017
               </li>
+              
             </ul>
           </div>
 
@@ -105,7 +117,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="mt-12 border-t border-gray-800 py-6">
           <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between text-sm text-gray-400">
-            <p>2025 © All rights reserved by <a href="#" className="text-blue-400 hover:underline">ITFirm</a></p>
+            <p>2025 © All rights reserved by <a href="#" className="text-blue-400 hover:underline">Mileazo</a></p>
           </div>
         </div>
       </footer>

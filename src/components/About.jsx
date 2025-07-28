@@ -28,11 +28,11 @@ const About = () => {
           </h2>
 
           <p className="text-gray-600 border-l-4 border-blue-600 pl-4 mb-8">
-            ITfirm is a leading Web and Mobile App Development Company with office in Delhi and Jaipur. We work according to the need of customers and provide the vital appropriate solution built by the team with experience of more than 7 years.
+            Mileazo is a leading Web and Mobile App Development Company based in Jaipur. We deliver tailored digital solutions by understanding customer needs and building them with a skilled, dedicated team.
           </p>
 
           {/* Features Row */}
-          <div className="grid grid-cols-2 gap-6 mb-8">
+          {/* <div className="grid grid-cols-2 gap-6 mb-8">
             <div className="flex items-center space-x-3">
               <img src="assets/Icon/4.png" alt="icon" className="w-10 h-10" />
               <div>
@@ -45,7 +45,7 @@ const About = () => {
                 <h5 className="font-semibold text-sm">Technical Support</h5>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Contact Block */}
           <div className="flex flex-col sm:flex-row items-center gap-4">
@@ -62,7 +62,7 @@ const About = () => {
               </div>
               <div>
                 <p className="text-sm text-gray-500">Call for help</p>
-                <p className="text-lg font-bold text-black">91 124 3467 2345</p>
+                <p className="text-lg font-bold text-black">0 (141) 2729706</p>
               </div>
             </div>
           </div>
