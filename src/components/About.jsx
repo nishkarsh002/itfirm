@@ -9,7 +9,7 @@ const About = () => {
         {/* Left: Image */}
         <div className="relative ">
           <img
-            src="assets/test/about_test.jpg"
+            src="assets/test/about.jpg"
             alt="About us"
             className="rounded-xl shadow-lg w-full max-w-md mx-auto mt-[62vh]  border-2 border-black lg:mt-0"
           />

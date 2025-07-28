@@ -42,15 +42,15 @@ const Banner = () => {
               >
                 
                 <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-90 transition-opacity duration-300 z-10" />
-                <div className="relative z-20 p-6 flex flex-col items-center border-black border-2">
+                <div className="relative z-20 p-6 flex flex-col items-center border-black border-2 text-sm">
                   <img
                     src={service.icon}
                     alt={service.title}
-                    className="w-14 h-14 mb-4"
+                    className="w-14 h-14 mb-3 "
                   />
-                  <h5 className="font-semibold text-gray-800 group-hover:text-white transition">
-                    {service.title}
-                  </h5>
+                  <h5 className="font-[smaller] text-gray-800 group-hover:text-white transition text-center break-words">
+  {service.title}
+</h5>
                 </div>
               </div>
             ))}
