@@ -77,7 +77,9 @@ const ContactUs = () => {
           <div className="space-y-6 lg:flex flex-col justify-center items-center">
             {/* Office Address */}
             <div className="bg-gray-100 p-6 rounded shadow-sm flex gap-4 lg:w-3/4">
-              <img src="https://html.themexriver.com/it-firm/images/icons/contact-1.png" alt="address" />
+              <img src="https://html.themexriver.com/it-firm/images/icons/contact-1.png"
+              width={65}
+              alt="address" />
               <div>
                 <h4 className="font-bold text-lg mb-1">Office address</h4>
                 <p>
@@ -90,7 +92,9 @@ const ContactUs = () => {
 
             {/* Phone */}
             <div className="bg-gray-100 p-6 rounded shadow-sm flex gap-4 lg:w-3/4">
-              <img src="https://html.themexriver.com/it-firm/images/icons/contact-2.png" alt="phone" />
+              <img src="https://html.themexriver.com/it-firm/images/icons/contact-2.png"
+              width={65}
+              alt="phone" />
               <div>
                 <h4 className="font-bold text-lg mb-1">Telephone number</h4>
                 <p>0 (141) 2729706</p>
@@ -99,7 +103,9 @@ const ContactUs = () => {
 
             {/* Email */}
             <div className="bg-gray-100 p-6 rounded shadow-sm flex gap-4 lg:w-3/4">
-              <img src="https://html.themexriver.com/it-firm/images/icons/contact-3.png" alt="email" />
+              <img src="https://html.themexriver.com/it-firm/images/icons/contact-3.png"
+              width={65}
+               alt="email" />
               <div>
                 <h4 className="font-bold text-lg mb-1">Mail address</h4>
                 <p>info@appturetechnology.com</p>

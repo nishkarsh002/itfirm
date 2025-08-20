@@ -39,9 +39,9 @@ const AboutUs = () => {
 
             </b> — where your vision meets smart technology, and your business gets the support it needs to grow faster.
           </p>
-          <Link to="/career">
+          <Link to="/services">
             <button className="bg-blue-700 text-white px-6 py-3 rounded shadow hover:bg-blue-800 transition">
-              Check for your career options
+              Check our services
             </button>
           </Link>
         </div>
@@ -55,88 +55,6 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Timeline Section */}
-      {/* <div className="bg-gray-100 py-12">
-        <div className="container mx-auto px-4 flex items-center">
-         
-          <button
-            onClick={() => scrollRef.current.scrollBy({ left: -300, behavior: "smooth" })}
-            className="bg-white p-2 rounded-full shadow mx-2 text-blue-600 hover:bg-blue-50"
-          >
-            <FaArrowLeft />
-          </button>
-
-          
-          <div
-            ref={scrollRef}
-            className="flex overflow-x-auto gap-6 scrollbar-hide scroll-smooth"
-          >
-            {[
-              { year: "2010", title: "Started business" },
-              { year: "2012", title: "Survival during wartime" },
-              { year: "2016", title: "Crisis and opportunity" },
-              { year: "2017", title: "Get Award" },
-              { year: "2020", title: "Global Expansion" },
-              { year: "2023", title: "Digital Transformation" },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="min-w-[250px] bg-white shadow-md rounded-xl p-6 text-center"
-              >
-                <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold py-2 rounded-t-xl">
-                  {item.year}
-                </div>
-                <h3 className="text-lg font-semibold mt-4">{item.title}</h3>
-                <p className="text-sm text-gray-600 mt-2">
-                  A People Ops leader who is committed to the growth and
-                  development of leaders.
-                </p>
-              </div>
-            ))}
-          </div>
-
-        
-          <button
-            onClick={() => scrollRef.current.scrollBy({ left: 300, behavior: "smooth" })}
-            className="bg-white p-2 rounded-full shadow mx-2 text-blue-600 hover:bg-blue-50"
-          >
-            <FaArrowRight />
-          </button>
-        </div>
-      </div> */}
-
-
-      {/* Team Section */}
-      {/* <div className="container mx-auto px-4 py-16 text-center">
-        <h2 className="text-blue-700 font-semibold mb-2">Team Member</h2>
-        <h1 className="text-3xl lg:text-4xl font-bold mb-10">
-          Passionate Personalities, <span className="text-blue-700">Versatile</span> Brains
-        </h1>
-
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { name: "Ashish Sudra", role: "Founder & CEO", img: "https://html.themexriver.com/it-firm/images/resource/team-1.jpg" },
-            { name: "Rachna Sheth", role: "International Business Head", img: "	https://html.themexriver.com/it-firm/images/resource/team-2.jpg" },
-            { name: "Tapak Meni", role: "Founder & CEO", img: "	https://html.themexriver.com/it-firm/images/resource/team-3.jpg" },
-            { name: "Ergi Laura", role: "Founder & CEO", img: "	https://html.themexriver.com/it-firm/images/resource/team-4.jpg" },
-          ].map((member, idx) => (
-            <div key={idx} className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <img src={member.img} alt={member.name} className="w-full h-64 object-cover" />
-              <div className="p-4">
-                <h3 className="font-semibold text-lg">{member.name}</h3>
-                <p className="text-sm text-gray-600">{member.role}</p>
-                <div className="flex justify-center space-x-3 mt-2 text-blue-600">
-                  <FaFacebookF />
-                  <FaTwitter />
-                  <FaLinkedinIn />
-                  <FaInstagram />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div> */}
 
       <Footer />
     </div>

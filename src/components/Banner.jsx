@@ -34,6 +34,7 @@ const Banner = () => {
 
       <div className="relative -mt-24 lg:mt-9 z-30">
         <div className="container mx-auto px-4">
+          <Link to="/services">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-2 gap-4">
             {services.map((service, index) => (
               <div
@@ -55,6 +56,7 @@ const Banner = () => {
               </div>
             ))}
           </div>
+           </Link>
         </div>
       </div>
 

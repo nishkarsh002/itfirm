@@ -102,12 +102,10 @@ const Services = () => {
           </h2>
           <p className="text-gray-700 text-lg mb-8">
             Unlock the full potential of your projects with our on-demand tech talent.
-            From backend to frontend, mobile to cloud — we provide skilled professionals in <b> Java, Python, Node.js, React, and more</b>. Whether you need a single developer or a full development team, our flexible outsourcing model adapts to your goals, timelines, and budget.
+            From backend to frontend, mobile to cloud — we provide skilled professionals in <b> Java, Fullstack, Dotnet, and more</b>. Whether you need a single developer or a full development team, our flexible outsourcing model adapts to your goals, timelines, and budget.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-
-          </div>
+         
 
         </div>
       </div>

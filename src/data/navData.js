@@ -31,7 +31,7 @@
   },
   {
     title: "Web Development",
-    icon: "/assets/Icon/card2.png",
+    icon: "/assets/Icon/2.svg",
   },
   {
     title: "Resource Outsourcing",
@@ -94,7 +94,7 @@ export const servicesOffer = [
           image: "/assets/client/cl2.webp",
       },
       {
-          name: "Appture",
+          name: "Medi Assist",
           // title: "CTO, TechnoSoft",
           feedback: "Great collaboration and timely execution. ITfirm’s development expertise helped us scale faster and improve performance across platforms.",
           image: "/assets/client/cl3.webp",
@@ -104,23 +104,12 @@ export const servicesOffer = [
 export const slides = [
   {
     image: "assets/img/react.jpg",
-    rightHeading: "Our Penetration Testing Team Uses An Industry",
-    rightText: "We provide the full spectrum of IT services and consulting for various industries.",
   },
   {
-    image: "assets/img/js.webp",
-    rightHeading: "Smarter Infrastructure Solutions For Your Business",
-    rightText: "We deliver stable, scalable, and reliable IT infrastructure solutions for enterprises.",
-  },
-  {
-    image: "assets/img/node.webp",
-    rightHeading: "Smarter Infrastructure Solutions For Your Business",
-    rightText: "We deliver stable, scalable, and reliable IT infrastructure solutions for enterprises.",
+    image: "assets/img/java.png",
   },
    {
-    image: "assets/img/java.png",
-    rightHeading: "Smarter Infrastructure Solutions For Your Business",
-    rightText: "We deliver stable, scalable, and reliable IT infrastructure solutions for enterprises.",
+    image: "assets/img/dotnet.png",
   },
 ];
 
@@ -135,7 +124,7 @@ export const servicesCard = [
   },
   {
     title: "Web Development",
-    icon: "../assets/Icon/card2.png",
+    icon: "../assets/Icon/card4.png",
     image: "../assets/img/service2.avif",
     description:
       "Building scalable, fast, and responsive websites tailored to meet your business goals and customer needs.",
@@ -149,8 +138,8 @@ export const servicesCard = [
   },
   {
     title: "Digital Marketing",
-    icon: "../assets/Icon/card4.png",
-    image: "../assets/img/service4.avif",
+    icon: "../assets/Icon/card2.png",
+    image: "../assets/img/service4.jpg",
     description:
       "Reach the right audience at the right time through SEO, social media, and paid ads.",
   },
