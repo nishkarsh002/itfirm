@@ -19,7 +19,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const app = express();
-const allowedOrigins = ['http://localhost:3000', 'https://itfirm-theta.vercel.app'];
+const allowedOrigins = ['http://localhost:3000', 'https://itfirm-theta.vercel.app' , 'https://itfirm-vcfj.vercel.app/'];
 
 app.use(cors({
   origin: function (origin, callback) {
