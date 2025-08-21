@@ -125,7 +125,7 @@ export const servicesCard = [
   {
     title: "Web Development",
     icon: "../assets/Icon/card4.png",
-    image: "../assets/img/service2.avif",
+    image: "../assets/img/service2.jpg",
     description:
       "Building scalable, fast, and responsive websites tailored to meet your business goals and customer needs.",
   },
