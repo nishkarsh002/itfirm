@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Column 1: About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="../assets/img/logo4.jpg" alt="logo" className="h-12" />
+              <img src="../assets/img/logo.jpg" alt="logo" className="h-12" />
             </div>
             <p className="text-sm mb-4">
               We work with a passion of taking challenges and creating new ones in the advertising sector.
